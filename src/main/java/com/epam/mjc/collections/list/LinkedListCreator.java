@@ -1,6 +1,5 @@
 package com.epam.mjc.collections.list;
 
-
 import java.util.LinkedList;
 import java.util.List;
 
