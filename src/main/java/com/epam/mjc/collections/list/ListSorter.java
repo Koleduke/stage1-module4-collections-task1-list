@@ -8,7 +8,7 @@ public class ListSorter {
         Comparator<String> df = new ListComparator();
 
         if(sourceList.isEmpty()){return;}
-
+        System.out.println(System.getProperty("java.version"));
         for (int i =0; sourceList.size()>i;i++)
         {
             int min = Integer.parseInt(res.get(0));
