@@ -11,8 +11,7 @@ public class ArrayListCreator {
             if((i)%3==2){continue;}
             res.add(sourceList.get(2+((i)/3)*3));
             if(sourceList.size()<6&&i==1){break;}
-        }
+               }
         return res;
     }
 }
-
