@@ -5,7 +5,7 @@ import java.util.*;
 public class ListSorter {
     public void sort(List<String> sourceList) {
         List <String> res = new ArrayList<>(sourceList);
-        Comparator df = new ListComparator();
+        Comparator<String> df = new ListComparator();
 
         if(sourceList.isEmpty()){return;}
 
@@ -13,12 +13,12 @@ public class ListSorter {
         {
             int min = Integer.parseInt(res.get(0));
 
-                for (int j =0; res.size()>j;j++){
-                    min = df.compare(String.valueOf(min),res.get(j));
-                    sourceList.set(i, String.valueOf(min));
-                }
+            for (String re : res) {
+                min = df.compare(String.valueOf(min), re);
+                sourceList.set(i, String.valueOf(min));
+            }
 
-                res.remove(res.indexOf(String.valueOf(min)));
+                res.remove(String.valueOf(min));
         }
 
     }
